@@ -10,7 +10,6 @@ import os
 
 # Create flask app and establish secret_key
 app = Flask(__name__)
-app.secret_key = os.urandom(23)
 
 accounts = {'hello':'world'}
 
