@@ -11,6 +11,9 @@ import os
 # Create flask app and establish secret_key
 app = Flask(__name__)
 
+#encrypts cookie values
+app.secret_key = os.urandom(32)
+
 accounts = {'hello':'world'}
 
 # Landing page
